@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const webpackMerge = require('webpack-merge')
 
-const webpackBaseConf = require('./wepack.base.config')
+const webpackBaseConf = require('./webpack.base.config')
 const webpackProdConf = require('./webpack.prod.config')
 
 
