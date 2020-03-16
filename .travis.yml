@@ -23,4 +23,4 @@ jobs:
 
 env:
   global:
-    - GH_REF: github.com/Bian2017/ii-fe.git
+    - GH_REF: github.com/Lagrange-Team/lt-mini-ui
