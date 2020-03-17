@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-import {Link, NavLink, withRouter} from 'react-router-dom'
-
+import React, { Component } from 'react';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 
 class PageHeader extends Component {
-  render () {
+  render() {
     return (
       <header>
         <div className="nav-left">
@@ -14,16 +13,13 @@ class PageHeader extends Component {
         <div className="nav-right">
           <ul>
             <li>
-              <NavLink to="/docs/mini">小程序</NavLink>
-            </li>
-            <li>
-              <NavLink to="/docs/admin">中后台</NavLink>
+              <NavLink to="/docs/introduction">组件</NavLink>
             </li>
           </ul>
         </div>
       </header>
-    )
+    );
   }
 }
 
-export default withRouter(PageHeader)
+export default withRouter(PageHeader);

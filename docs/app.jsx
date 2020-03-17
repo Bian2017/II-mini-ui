@@ -1,20 +1,26 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Index from './pages/index.jsx'
-import Docs from './pages/docs.jsx'
+import Index from './pages/index.jsx';
+import Docs from './pages/docs.jsx';
 
 class App extends Component {
-  render () {
-    return <div>
-      <Switch>
-        <Route path="/" exact component={Index} />
-        <Route path="/docs" exact component={Docs} />
-      </Switch>
-    </div>
+  render() {
+    return (
+      <div>
+        <Switch>
+          <Route path="/" exact component={Index} />
+          <Route path="/docs" component={Docs} />
+        </Switch>
+      </div>
+    );
   }
 }
 
-ReactDOM.render(<Router><App /></Router>, document.getElementById('container'))
-
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('container')
+);
