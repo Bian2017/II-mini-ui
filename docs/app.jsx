@@ -8,7 +8,7 @@ import Docs from './pages/docs.jsx';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="wrapper" style={{ backgroundColor: '#F8FAFF' }}>
         <Switch>
           <Route path="/" exact component={Index} />
           <Route path="/docs" component={Docs} />

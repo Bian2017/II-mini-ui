@@ -12,7 +12,7 @@ class Docs extends Component {
     const data = navsConfig['components'];
 
     return (
-      <div id="app">
+      <div id="app" className="app">
         <PageHeader collapse />
         <div className="at-container row">
           <div className="at-sidebar col-sm-24 col-md-6 col-lg-4">

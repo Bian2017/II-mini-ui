@@ -1,3 +1,5 @@
+@import '../../lib/default.scss';
+
 .at-sidebar {
   display: inline-block;
   margin: 32px 0;
@@ -6,6 +8,7 @@
   height: calc(100% - 64px);
   color: #3f536e;
   background-color: #fff;
+  border-right: 1px solid $grey-100;
   z-index: 99;
   overflow: auto;
 }
@@ -19,6 +22,7 @@
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   &__group {
@@ -29,6 +33,7 @@
     font-weight: normal;
 
     &:hover {
+      color: $brand-blue-700;
     }
   }
 
@@ -49,5 +54,15 @@
     .active & {
       display: block;
     }
+  }
+
+  &__page {
+    display: block;
+    position: relative;
+    padding: 8px 24px;
+    color: #3f536e;
+    font-weight: normal;
+    line-height: 1.5;
+    cursor: pointer;
   }
 }

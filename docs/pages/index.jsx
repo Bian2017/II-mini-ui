@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import PageHeader from '../components/header'
+import PageHeader from '../components/header';
+import '../assets/style/index.scss';
 
 class Index extends Component {
-
-  render () {
+  render() {
     return (
       <div>
         <PageHeader />
-        <div>
-          实在前端团队
-        </div>
+        <div>实在前端团队</div>
       </div>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;

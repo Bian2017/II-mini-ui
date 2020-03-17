@@ -1,6 +1,10 @@
 @import '~at-ui-style/src/variables/index.scss';
 @import '~at-ui-style/src/mixins/index.scss';
 
+.app {
+  padding: 110px 30px 48px;
+}
+
 .at-container {
   position: relative;
   height: calc(100vh - 158px);
