@@ -1,8 +1,16 @@
-.sz-sidebar {
+.at-sidebar {
+  display: inline-block;
   margin: 32px 0;
+  padding: 0;
+
+  height: calc(100% - 64px);
+  color: #3f536e;
+  background-color: #fff;
+  z-index: 99;
+  overflow: auto;
 }
 
-.sz-nav {
+.at-nav {
   font-size: 14px;
 
   &__title {

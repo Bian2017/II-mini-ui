@@ -25,6 +25,10 @@ module.exports = {
             loader: 'json-loader!yaml-loader' // 将yaml转换成JSON
           },
           {
+            test: /\.md$/,
+            loader: `babel-loader!${path.join(__dirname, './addImportLoader.js')}`
+          },
+          {
             test: /\.(css|scss|sass)$/,
             use: [
               'style-loader',
@@ -54,6 +58,22 @@ module.exports = {
               },
               'sass-loader'
             ]
+          },
+          {
+            test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+            loader: 'file-loader',
+            options: {
+              limit: 3000,
+              name: 'fonts/[name].[ext]'
+            }
+          },
+          {
+            exclude: /\.js|\.css|\.scss|\.sass|\.html|\.json|\.ejs$/,
+            loader: 'url-loader',
+            options: {
+              limit: 2000,
+              name: 'ext/[name].[ext]'
+            }
           }
         ]
       }
