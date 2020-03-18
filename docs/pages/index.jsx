@@ -6,9 +6,12 @@ import '../assets/style/index.scss';
 class Index extends Component {
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <PageHeader />
-        <div>实在前端团队</div>
+        <div className="bg-container">
+          <div className="bg-top-border"></div>
+          <div className="bg-top-shadow"></div>
+        </div>
       </div>
     );
   }

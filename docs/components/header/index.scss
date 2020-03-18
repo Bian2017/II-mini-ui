@@ -19,6 +19,18 @@ $header-height: 80px;
     .nav-container {
       width: 100%;
       padding: 0 50px;
+
+      .nav-left .logo span {
+        color: #1d1d1f;
+      }
+
+      .nav-right .navbar {
+        margin-right: 0;
+      }
+
+      .navbar a {
+        color: #1d1d1f;
+      }
     }
   }
 }

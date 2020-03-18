@@ -25,6 +25,11 @@ class PageHeader extends Component {
                   组件
                 </NavLink>
               </li>
+              <li>
+                <a href="javascript:;" target="__blank">
+                  关于我们
+                </a>
+              </li>
             </ul>
           </div>
         </div>
